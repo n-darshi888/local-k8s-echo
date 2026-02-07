@@ -21,11 +21,7 @@ spec:
           ports:
             - containerPort: 5678
       imagePullSecrets:
-<<<<<<< HEAD
-　　　　  - name: ghcr-secret
-=======
         - name: ghcr-secret
->>>>>>> fix: set valid GHCR image for echo
 ---
 apiVersion: v1
 kind: Service
