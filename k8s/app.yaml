@@ -20,6 +20,8 @@ spec:
           args: ["-listen=:5678","-text=hello-from-gh-actions"]
           ports:
             - containerPort: 5678
+      imagePullSecrets:
+　　　　  - name: ghcr-secret
 ---
 apiVersion: v1
 kind: Service
