@@ -16,12 +16,16 @@ spec:
     spec:
       containers:
         - name: echo
-          image: ghcr.io/OWNER/REPO:TAG
+          image: ghcr.io/n-darshi888/local-k8s-echo:4de41fc
           args: ["-listen=:5678","-text=hello-from-gh-actions"]
           ports:
             - containerPort: 5678
       imagePullSecrets:
+<<<<<<< HEAD
 　　　　  - name: ghcr-secret
+=======
+        - name: ghcr-secret
+>>>>>>> fix: set valid GHCR image for echo
 ---
 apiVersion: v1
 kind: Service
