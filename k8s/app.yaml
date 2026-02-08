@@ -17,7 +17,7 @@ spec:
       containers:
         - name: echo
           image: hashicorp/http-echo:0.2.3
-          args: ["-listen=:5678","-text=hello-from-gh-actions"]
+          args: ["-listen=:5678","-text=hello-from-argo"]
           ports:
             - containerPort: 5678
       imagePullSecrets:
