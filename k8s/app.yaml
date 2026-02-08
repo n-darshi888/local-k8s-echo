@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: echo
-          image: ghcr.io/n-darshi888/local-k8s-echo:78f7b6a828581ef96d46a7860a1d0df60cdaa750
+          image: hashicorp/http-echo:0.2.3
           args: ["-listen=:5678","-text=hello-from-gh-actions"]
           ports:
             - containerPort: 5678
